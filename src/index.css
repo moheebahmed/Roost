@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@theme {
+  --font-hanken: 'Hanken Grotesk', sans-serif;
+  --font-montserrat: 'Montserrat', sans-serif;
+  --width-container: 1240px;
+}

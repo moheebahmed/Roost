@@ -10,7 +10,7 @@ function QualityCTA() {
                     <img
                         src={kantaChamach}
                         aria-hidden="true"
-                        className="hidden md:block absolute right-0 top-0 h-full w-auto object-contain opacity-20 pointer-events-none"
+                        className="hidden md:block absolute right-0 top-0 h-full w-auto object-contain"
                     />
 
                     {/* Left — Text */}

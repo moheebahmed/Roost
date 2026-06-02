@@ -28,7 +28,7 @@ function FarmToFryer() {
 
                 {/* Left — Logo */}
                 <div className="bg-white shrink-0 flex items-center justify-center w-full max-w-[280px] md:max-w-[300px] mx-auto md:mx-0 p-6">
-                    <img src={roostLogo} alt="Roost & Co" className="w-full object-contain" />
+                    <img src={roostLogo} className="w-full object-contain" />
                 </div>
 
                 {/* Right — Content */}

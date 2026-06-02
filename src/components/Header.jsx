@@ -1,19 +1,21 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import logo from '../assets/images/logo.png'
-import { FiMenu, FiX } from 'react-icons/fi'
+import { FiMenu, FiX, FiShoppingBag } from 'react-icons/fi'
+import { useCart } from '../context/CartContext'
 
 const navLinks = [
     { label: 'Home', href: '/' },
     { label: 'Quality', href: '/quality' },
      { label: 'Menu', href: '/menu' },
     { label: 'Story', href: '#' },
-    { label: 'Locations', href: '#' },
+    { label: 'Locations', href: '/locations' },
 ]
 
 function Header() {
     const [menuOpen, setMenuOpen] = useState(false)
     const location = useLocation()
+    const { totalItems } = useCart()
 
     const isActive = (href) => {
         if (href === '/') return location.pathname === '/'
@@ -45,14 +47,34 @@ function Header() {
                 </nav>
 
                 {/* Desktop CTA */}
-                <a href="#" className="hidden md:block font-montserrat text-sm font-bold bg-[#E61E2A] text-white px-6 py-2.5 hover:bg-red-700 transition-colors tracking-wide">
-                    ORDER NOW
-                </a>
+                <div className="hidden md:flex items-center gap-4">
+                    <Link to="/cart" className="relative text-[#1A1C1C] hover:text-[#BD001A] transition-colors">
+                        <FiShoppingBag size={22} />
+                        {totalItems > 0 && (
+                            <span className="absolute -top-2 -right-2 bg-[#E61E2A] text-white text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center">
+                                {totalItems}
+                            </span>
+                        )}
+                    </Link>
+                    <Link to="/menu" className="font-montserrat text-sm font-bold bg-[#E61E2A] text-white px-6 py-2.5 hover:bg-red-700 transition-colors tracking-wide">
+                        ORDER NOW
+                    </Link>
+                </div>
 
-                {/* Mobile Hamburger */}
-                <button className="md:hidden text-gray-800" onClick={() => setMenuOpen(!menuOpen)}>
-                    {menuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
-                </button>
+                {/* Mobile Hamburger + Cart */}
+                <div className="md:hidden flex items-center gap-4">
+                    <Link to="/cart" className="relative text-[#1A1C1C]">
+                        <FiShoppingBag size={22} />
+                        {totalItems > 0 && (
+                            <span className="absolute -top-2 -right-2 bg-[#E61E2A] text-white text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center">
+                                {totalItems}
+                            </span>
+                        )}
+                    </Link>
+                    <button className="text-gray-800" onClick={() => setMenuOpen(!menuOpen)}>
+                        {menuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+                    </button>
+                </div>
             </div>
 
             {/* Mobile Menu */}
@@ -68,9 +90,9 @@ function Header() {
                             {link.label}
                         </Link>
                     ))}
-                    <a href="#" className="font-montserrat text-sm font-bold bg-[#E61E2A] text-white px-6 py-3 text-center hover:bg-red-700 transition-colors tracking-wide">
+                    <Link to="/menu" onClick={() => setMenuOpen(false)} className="font-montserrat text-sm font-bold bg-[#E61E2A] text-white px-6 py-3 text-center hover:bg-red-700 transition-colors tracking-wide">
                         ORDER NOW
-                    </a>
+                    </Link>
                 </div>
             )}
         </header>

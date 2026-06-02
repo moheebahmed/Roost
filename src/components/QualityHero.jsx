@@ -18,7 +18,7 @@ function QualityHero() {
             <div className="absolute inset-0 bg-black/60" />
 
             {/* Text Content */}
-            <div className="relative z-10 h-full flex flex-col justify-center px-6 md:px-16 max-w-[1240px] mx-auto">
+            <div className="relative z-10 h-full flex flex-col justify-center px-6 md:px-10 max-w-[1240px] mx-auto">
 
                 {/* Badge */}
                 <span className="inline-block bg-[#BD001A] text-white font-['Hanken_Grotesk'] font-bold text-[14px] leading-[14px] tracking-[0.7px] uppercase px-[8px] py-[4px] mb-3 w-fit">

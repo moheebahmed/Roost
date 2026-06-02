@@ -7,6 +7,7 @@ function GetItHot() {
             {/* Background Text Image */}
             <img
                 src={containerBg}
+      
                 className="absolute inset-0 w-full h-full object-contain opacity-100 pointer-events-none select-none"
             />
 

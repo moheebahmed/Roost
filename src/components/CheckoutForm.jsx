@@ -16,14 +16,12 @@ function ToggleBtn({ value, current, onSelect, Icon, label }) {
         <button
             type="button"
             onClick={() => onSelect(value)}
-            className={`flex-1 flex flex-col items-center gap-2 py-4 border-2 transition-all cursor-pointer ${
-                active ? 'border-[#BD001A] bg-[#FFF5F5]' : 'border-[#E8E8E8] hover:border-[#ADADAD]'
-            }`}
+            className={`flex-1 flex flex-col items-center gap-2 py-4 border-2 transition-all cursor-pointer ${active ? 'border-[#BD001A] bg-[#FFF5F5]' : 'border-[#E8E8E8] hover:border-[#ADADAD]'
+                }`}
         >
             <Icon size={20} className={active ? 'text-[#BD001A]' : 'text-[#ADADAD]'} />
-            <span className={`font-['Hanken_Grotesk'] font-bold text-[12px] tracking-widest uppercase ${
-                active ? 'text-[#BD001A]' : 'text-[#9A9C9C]'
-            }`}>
+            <span className={`font-['Hanken_Grotesk'] font-bold text-[12px] tracking-widest uppercase ${active ? 'text-[#BD001A]' : 'text-[#9A9C9C]'
+                }`}>
                 {label}
             </span>
         </button>
@@ -42,9 +40,8 @@ function FormField({ label, name, type = 'text', placeholder, value, onChange, e
                 value={value}
                 onChange={onChange}
                 placeholder={placeholder}
-                className={`w-full border px-3 py-3 font-['Hanken_Grotesk'] text-[14px] outline-none transition-colors bg-[#FAFAFA] ${
-                    error ? 'border-[#BD001A]' : 'border-[#E2E2E2] focus:border-[#1A1C1C]'
-                }`}
+                className={`w-full border px-3 py-3 font-['Hanken_Grotesk'] text-[14px] outline-none transition-colors bg-[#FAFAFA] ${error ? 'border-[#BD001A]' : 'border-[#E2E2E2] focus:border-[#1A1C1C]'
+                    }`}
             />
             {error && <p className="text-[#BD001A] text-[11px] mt-1">{error}</p>}
         </div>
@@ -62,8 +59,8 @@ function CheckoutForm({ form, errors, orderType, payMethod, onChange, onOrderTyp
             <div className="bg-white border border-[#E8E8E8]">
                 <SectionHead label="ORDER TYPE" />
                 <div className="p-5 flex gap-3">
-                    <ToggleBtn value="delivery" current={orderType} onSelect={onOrderTypeChange} Icon={FiMapPin}      label="Delivery" />
-                    <ToggleBtn value="pickup"   current={orderType} onSelect={onOrderTypeChange} Icon={FiShoppingBag} label="Pickup"   />
+                    <ToggleBtn value="delivery" current={orderType} onSelect={onOrderTypeChange} Icon={FiMapPin} label="Delivery" />
+                    <ToggleBtn value="pickup" current={orderType} onSelect={onOrderTypeChange} Icon={FiShoppingBag} label="Pickup" />
                 </div>
             </div>
 
@@ -72,12 +69,12 @@ function CheckoutForm({ form, errors, orderType, payMethod, onChange, onOrderTyp
                 <SectionHead label="PERSONAL INFORMATION" />
                 <div className="p-5 flex flex-col gap-4">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <FormField label="First Name" name="firstName" placeholder="John"         value={form.firstName} onChange={onChange} error={errors.firstName} required />
-                        <FormField label="Last Name"  name="lastName"  placeholder="Doe"          value={form.lastName}  onChange={onChange} error={errors.lastName}  required />
+                        <FormField label="First Name" name="firstName" placeholder="John" value={form.firstName} onChange={onChange} error={errors.firstName} required />
+                        <FormField label="Last Name" name="lastName" placeholder="Doe" value={form.lastName} onChange={onChange} error={errors.lastName} required />
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <FormField label="Phone" name="phone" type="tel"   placeholder="+1 (555) 000-0000" value={form.phone} onChange={onChange} error={errors.phone} required />
-                        <FormField label="Email" name="email" type="email" placeholder="john@example.com"  value={form.email} onChange={onChange} error={errors.email} required />
+                        <FormField label="Phone" name="phone" type="tel" placeholder="+1 (555) 000-0000" value={form.phone} onChange={onChange} error={errors.phone} required />
+                        <FormField label="Email" name="email" type="email" placeholder="john@example.com" value={form.email} onChange={onChange} error={errors.email} required />
                     </div>
                 </div>
             </div>
@@ -88,7 +85,7 @@ function CheckoutForm({ form, errors, orderType, payMethod, onChange, onOrderTyp
                     <SectionHead label="DELIVERY ADDRESS" />
                     <div className="p-5 flex flex-col gap-4">
                         <FormField label="Street Address" name="address" placeholder="123 Main Street, Apt 4B" value={form.address} onChange={onChange} error={errors.address} required />
-                        <FormField label="City"           name="city"    placeholder="New York"                value={form.city}    onChange={onChange} error={errors.city}    required />
+                        <FormField label="City" name="city" placeholder="New York" value={form.city} onChange={onChange} error={errors.city} required />
                     </div>
                 </div>
             )}

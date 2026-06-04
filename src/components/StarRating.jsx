@@ -1,12 +1,9 @@
 import { useState } from 'react'
 import { FiStar } from 'react-icons/fi'
 
-/**
- * Interactive star rating widget used on ThankYou page
- */
 function StarRating() {
-    const [rating, setRating]     = useState(0)
-    const [hovered, setHovered]   = useState(0)
+    const [rating, setRating] = useState(0)
+    const [hovered, setHovered] = useState(0)
     const [submitted, setSubmitted] = useState(false)
 
     if (submitted) {
@@ -42,9 +39,8 @@ function StarRating() {
                     >
                         <FiStar
                             size={32}
-                            className={`transition-colors ${
-                                s <= (hovered || rating) ? 'text-[#F9A825]' : 'text-[#E0E0E0]'
-                            }`}
+                            className={`transition-colors ${s <= (hovered || rating) ? 'text-[#F9A825]' : 'text-[#E0E0E0]'
+                                }`}
                             fill={s <= (hovered || rating) ? '#F9A825' : 'none'}
                         />
                     </button>

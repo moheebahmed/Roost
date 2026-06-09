@@ -33,7 +33,6 @@ export default function OrderTracking() {
     }
   }, [order, navigate])
 
-  // Poll backend for real order status every 10 seconds
   useEffect(() => {
     if (!order?.id) return
 
@@ -43,18 +42,16 @@ export default function OrderTracking() {
         const newStep = data.step ?? statusStepMap[data.status] ?? 0
         setStep(newStep)
 
-        // Update ETA from estimatedReadyAt if available
         if (data.estimatedReadyAt) {
           const diff = Math.round((new Date(data.estimatedReadyAt) - Date.now()) / 60000)
           setEta(diff > 0 ? diff : 0)
         }
       } catch {
-        // Silently ignore polling errors
       }
     }
 
-    poll() // Immediate first poll
-    const interval = setInterval(poll, 10000) // Poll every 10s
+    poll()
+    const interval = setInterval(poll, 10000)
     return () => clearInterval(interval)
   }, [order?.id])
 

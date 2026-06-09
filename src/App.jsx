@@ -10,6 +10,8 @@ import Checkout from './pages/Checkout'
 import OrderConfirmation from './pages/OrderConfirmation'
 import OrderTracking from './pages/OrderTracking'
 import ThankYou from './pages/ThankYou'
+import BackToTop from "./components/BackToTop";
+
 
 function Layout() {
   return (
@@ -20,9 +22,11 @@ function Layout() {
       <Outlet />
       {/* ─────Footer─────── */}
       <Footer />
+
+      <BackToTop />
     </div>
   )
-} 
+}
 
 function App() {
   return (

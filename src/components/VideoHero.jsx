@@ -25,5 +25,5 @@ function VideoHero({ src, badge, title, subtitle }) {
     </section>
   )
 }
-
+ 
 export default VideoHero

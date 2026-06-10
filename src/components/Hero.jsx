@@ -54,7 +54,7 @@ function Hero() {
                         </p>
                         <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
                             <a href="#" className="font-['Hanken_Grotesk'] font-bold text-[14px] leading-[14px] tracking-[0.7px] uppercase bg-[#E61E2A] text-white px-[28px] py-[18px] flex items-center gap-2 hover:bg-red-700 transition-colors w-full sm:w-auto justify-center">
-                                ORDER FOR PICKUP
+                                order for pickup
                                 <img src={pickupIcon} className="w-5 h-5 object-contain" />
                             </a>
                             <a href="#" className="font-['Hanken_Grotesk'] font-bold text-[14px] leading-[14px] tracking-[0.7px] uppercase bg-[#2F3131] text-white px-[28px] py-[20px] transition-colors hover:bg-[#BD001A] w-full sm:w-auto justify-center flex">

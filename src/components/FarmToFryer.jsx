@@ -20,7 +20,7 @@ const features = [
         desc: 'Our high-velocity fryers use sustainable vegetable oils filtered twice daily for peak hygiene and taste.',
     },
 ]
-
+ 
 function FarmToFryer() {
     return (
         <section className="bg-[#2F3131]">

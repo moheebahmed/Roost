@@ -84,7 +84,6 @@ function NutritionalIndex() {
                         </table>
                     </div>
                 </div>
-
             </div>
         </section>
     )

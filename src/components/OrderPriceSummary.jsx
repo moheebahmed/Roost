@@ -28,5 +28,5 @@ function OrderPriceSummary({ subtotal, delivery, tax, total, label = 'TOTAL' }) 
         </div>
     )
 }
-
+ 
 export default OrderPriceSummary

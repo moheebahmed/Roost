@@ -7,10 +7,10 @@ import { Link } from 'react-router-dom'
 import { useCart } from '../context/CartContext'
 
 const lineupItems = [
-  { id: 101, name: 'crispy mega bucket',   price: '$29.99', image: img1, category: 'BUCKETS',  tag: 'BEST SELLER' },
-  { id: 102, name: 'classic roost burger', price: '$12.49', image: img2, category: 'BURGERS',  tag: null },
-  { id: 103, name: 'signature dust FRIESFRIES', price: '$4.99',  image: img3, category: 'SIDES',    tag: null },
-  { id: 104, name: 'NASHVILLE hot WINGS',  price: '$16.99', image: img4, category: 'BUCKETS',  tag: 'NEW ADDITION' },
+  { id: 101, name: 'crispy mega bucket', price: '$29.99', image: img1, category: 'BUCKETS', tag: 'BEST SELLER' },
+  { id: 102, name: 'classic roost burger', price: '$12.49', image: img2, category: 'BURGERS', tag: null },
+  { id: 103, name: 'signature dust FRIESFRIES', price: '$4.99', image: img3, category: 'SIDES', tag: null },
+  { id: 104, name: 'NASHVILLE hot WINGS', price: '$16.99', image: img4, category: 'BUCKETS', tag: 'NEW ADDITION' },
 ]
 
 function SignatureLineup() {
@@ -26,14 +26,14 @@ function SignatureLineup() {
         <div className="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-2">
           <div>
             <h2 className="font-['Montserrat'] font-bold text-[20px] md:text-[32px] leading-tight uppercase text-gray-900">
-              THE SIGNATURE LINEUP
+              the signature lineup 
             </h2>
             <p className="font-['Hanken_Grotesk'] font-normal text-[14px] md:text-[16px] leading-[25.6px] text-gray-500 mt-1">
               Our most-wanted heavy hitters.
             </p>
           </div>
           <Link to="/menu" className="font-['Hanken_Grotesk'] font-bold text-[12px] md:text-[14px] tracking-[0.7px] uppercase text-[#BD001A] hover:underline flex items-center gap-1 shrink-0">
-            VIEW FULL MENU <FiArrowRight size={16} />
+            view full menu <FiArrowRight size={16} />
           </Link>
         </div>
 
@@ -45,7 +45,7 @@ function SignatureLineup() {
             <img src={card1.image} className="absolute inset-0 w-full h-full object-cover opacity-90" />
             <div className="relative z-10 p-6">
               <span className="bg-[#E61E2A] text-white font-['Hanken_Grotesk'] font-medium text-[13px] leading-[12px] uppercase px-[12px] py-[4px] mb-3 inline-block">
-                BEST SELLER
+                best seller
               </span>
               <h3 className="font-['Montserrat'] font-bold text-[20px] md:text-[24px] leading-[31.2px] uppercase text-white mb-2">
                 {card1.name}
@@ -59,7 +59,7 @@ function SignatureLineup() {
                   onClick={() => addToCart(card1)}
                   className="font-['Hanken_Grotesk'] font-bold text-[13px] md:text-[14px] leading-[14px] tracking-[0.7px] uppercase border border-white text-white px-4 md:px-5 py-2.5 hover:bg-white hover:text-gray-900 transition-colors cursor-pointer"
                 >
-                  ADD TO ORDER
+                  add to order
                 </button>
               </div>
             </div>
@@ -118,7 +118,7 @@ function SignatureLineup() {
           <div className="bg-white overflow-hidden border border-[#E2E2E2] flex flex-col md:flex-row md:items-center md:gap-6 md:p-6 md:w-[760px] md:h-[478.38px] md:relative md:right-[34%]">
             <div className="flex-1 p-5 md:p-0">
               <span className="font-['Hanken_Grotesk'] font-bold text-[13px] md:text-[14px] leading-[14px] tracking-[0.7px] uppercase text-red-600 mb-2 block">
-                NEW ADDITION
+                new addition
               </span>
               <h3 className="font-['Montserrat'] font-bold text-[20px] md:text-[24px] leading-[31.2px] uppercase text-gray-900 mb-1">
                 {card4.name}
@@ -130,7 +130,7 @@ function SignatureLineup() {
                 onClick={() => addToCart(card4)}
                 className="font-['Montserrat'] font-bold text-[12px] tracking-widest uppercase bg-[#1A1C1C] text-white px-5 py-2.5 hover:bg-[#BD001A] transition-colors cursor-pointer"
               >
-                ADD TO ORDER
+                add to Order
               </button>
             </div>
             <div className="w-full h-[200px] md:w-44 md:h-44">

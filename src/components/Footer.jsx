@@ -90,13 +90,13 @@ function Footer() {
             Order Now
           </h4>
           <a href="#" className="font-['Montserrat'] font-bold text-[12px] tracking-widest uppercase bg-[#E61E2A] text-white px-6 py-4 hover:bg-red-700 transition-colors text-center">
-            ORDER FOR PICKUP
+            Order for pickup
           </a>
           <a href="#" className="font-['Montserrat'] font-bold text-[12px] tracking-widest uppercase border border-gray-600 text-gray-300 px-6 py-4 hover:border-red-600 hover:text-red-600 transition-colors text-center">
-            FIND A ROOST
+            find a roost
           </a>
           <a href="#" className="font-['Montserrat'] font-bold text-[12px] tracking-widest uppercase border border-gray-600 text-gray-300 px-6 py-4 hover:border-red-600 hover:text-red-600 transition-colors text-center">
-            DELIVERY OPTIONS
+            delivery options
           </a>
         </div>
 

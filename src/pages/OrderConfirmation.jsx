@@ -55,14 +55,14 @@ export default function OrderConfirmation() {
         <div className="flex flex-col gap-3">
           <Link to="/order-tracking" state={{ order }}
             className="w-full bg-[#BD001A] text-white font-['Hanken_Grotesk'] font-bold text-[13px] tracking-widest uppercase py-4 text-center hover:bg-red-700 transition-colors flex items-center justify-center gap-2">
-            <FiNavigation size={14} /> TRACK MY ORDER
+            <FiNavigation size={14} /> track my order
           </Link>
           <div className="flex flex-col sm:flex-row gap-3">
             <Link to="/" className="flex-1 bg-[#1A1C1C] text-white font-['Hanken_Grotesk'] font-bold text-[12px] tracking-widest uppercase py-4 text-center hover:bg-[#BD001A] transition-colors flex items-center justify-center gap-2">
-              <FiHome size={14} /> BACK TO HOME
+              <FiHome size={14} /> back to home
             </Link>
             <Link to="/menu" className="flex-1 bg-white border border-[#D0D0D0] text-[#5D5F5F] font-['Hanken_Grotesk'] font-bold text-[12px] tracking-widest uppercase py-4 text-center hover:border-[#1A1C1C] hover:text-[#1A1C1C] transition-colors flex items-center justify-center gap-2">
-              <FiShoppingBag size={14} /> ORDER MORE
+              <FiShoppingBag size={14} /> order more 
             </Link>
           </div>
         </div>

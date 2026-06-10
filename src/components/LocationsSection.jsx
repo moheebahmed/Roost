@@ -56,7 +56,7 @@ function LocationCard({ loc }) {
           className="mt-2 flex items-center justify-center gap-2 font-['Montserrat'] font-bold text-[12px] tracking-widest uppercase bg-[#E61E2A] text-white px-5 py-3 hover:bg-red-700 transition-colors"
         >
           <FiNavigation size={14} />
-          GET DIRECTIONS
+          get directions
         </a>
       </div>
     </div>
@@ -188,7 +188,7 @@ function LocationsSection() {
               className="px-4 py-3.5 bg-white/10 border border-gray-600 text-white placeholder-gray-500 font-['Hanken_Grotesk'] text-[14px] focus:outline-none focus:border-[#E61E2A] transition-colors min-w-[220px]"
             />
             <button className="font-['Montserrat'] font-bold text-[12px] tracking-widest uppercase bg-[#E61E2A] text-white px-7 py-3.5 hover:bg-red-700 transition-colors whitespace-nowrap">
-              NOTIFY ME
+              notify me
             </button>
           </div>
         </div>

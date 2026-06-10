@@ -42,5 +42,5 @@ function QualityStandards() {
         </section>
     )
 }
-
+ 
 export default QualityStandards

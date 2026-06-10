@@ -51,7 +51,7 @@ function StarRating() {
                     onClick={() => setSubmitted(true)}
                     className="bg-[#1A1C1C] text-white font-['Hanken_Grotesk'] font-bold text-[11px] tracking-widest uppercase px-6 py-2.5 hover:bg-[#BD001A] transition-colors cursor-pointer"
                 >
-                    SUBMIT RATING
+                    submit rating
                 </button>
             )}
         </div>

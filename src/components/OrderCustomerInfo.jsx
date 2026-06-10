@@ -7,7 +7,7 @@ import { FiMapPin, FiPhone } from 'react-icons/fi'
  */
 function OrderCustomerInfo({ order }) {
     const { customer, orderType, payMethod } = order
-
+ 
     return (
         <div className="bg-white border border-[#E8E8E8] px-5 py-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
 

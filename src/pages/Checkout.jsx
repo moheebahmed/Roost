@@ -89,7 +89,7 @@ export default function Checkout() {
         <FiShoppingBag size={48} className="text-[#D0D0D0]" />
         <p className="font-['Montserrat'] font-black text-[18px] uppercase text-[#1A1C1C]">Your cart is empty</p>
         <Link to="/menu" className="bg-[#E61E2A] text-white font-['Hanken_Grotesk'] font-bold text-[12px] tracking-widest uppercase px-8 py-4 hover:bg-red-700 transition-colors">
-          VIEW MENU
+          view menu
         </Link>
       </div>
     )

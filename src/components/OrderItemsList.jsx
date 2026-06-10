@@ -40,7 +40,7 @@ function OrderItemsList({ items, showTotal, total, title = 'YOUR ITEMS', orderId
             {showTotal && total && (
                 <div className="px-5 py-4 border-t border-[#F0F0F0] flex justify-between items-center">
                     <span className="font-['Montserrat'] font-black text-[13px] uppercase text-[#1A1C1C]">
-                        TOTAL PAID
+                        total paid
                     </span>
                     <span className="font-['Montserrat'] font-black text-[20px] text-[#BD001A]">
                         ${total}

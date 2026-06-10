@@ -30,13 +30,13 @@ function QualityCTA() {
                             href="#"
                             className="font-['Hanken_Grotesk'] font-bold text-[13px] uppercase bg-[#1A1C1C] text-white py-4 px-8 text-center hover:bg-black transition-colors"
                         >
-                            ORDER MOBILE
+                           Order mobile
                         </a>
                         <a
                             href="#"
                             className="font-['Hanken_Grotesk'] font-bold text-[13px] uppercase border-2 border-white text-white py-4 px-8 text-center hover:bg-white hover:text-[#BD001A] transition-colors"
                         >
-                            FIND LOCATION
+                            find location
                         </a>
                     </div>
 

@@ -43,7 +43,7 @@ export default function Cart() {
             <div className="flex-1 flex flex-col gap-3">
               <div className="flex justify-end mb-1">
                 <button onClick={clearCart} className="font-['Hanken_Grotesk'] font-bold text-[11px] tracking-widest uppercase text-[#ADADAD] hover:text-[#BD001A] transition-colors flex items-center gap-1.5 cursor-pointer">
-                  <FiTrash2 size={12} /> CLEAR ALL
+                  <FiTrash2 size={12} /> clear all
                 </button>
               </div>
 
@@ -98,10 +98,10 @@ export default function Cart() {
                     tax={tax.toFixed(2)} total={grandTotal.toFixed(2)} label="TOTAL"
                   />
                   <button onClick={() => navigate('/checkout')} className="mt-5 w-full bg-[#E61E2A] text-white font-['Hanken_Grotesk'] font-bold text-[13px] tracking-widest uppercase py-4 hover:bg-red-700 transition-colors cursor-pointer">
-                    PLACE ORDER →
+                    place Order →
                   </button>
                   <Link to="/menu" className="mt-2 w-full border border-[#D0D0D0] text-[#5D5F5F] font-['Hanken_Grotesk'] font-bold text-[12px] tracking-widest uppercase py-3.5 hover:border-[#1A1C1C] hover:text-[#1A1C1C] transition-colors text-center block">
-                    + ADD MORE ITEMS
+                    + add more items
                   </Link>
                 </div>
               </div>

@@ -58,7 +58,7 @@ function Header() {
             ORDER NOW
           </Link>
         </div>
-
+ 
         {/* Mobile */}
         <div className="md:hidden flex items-center gap-4">
           <CartIcon count={totalItems} />

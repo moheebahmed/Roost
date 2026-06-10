@@ -57,7 +57,7 @@ export default function ThankYou() {
         {/* What's next */}
         <div className="bg-white border border-[#E8E8E8] mb-7 overflow-hidden">
           <div className="bg-[#1A1C1C] px-5 py-3">
-            <h2 className="font-['Montserrat'] font-black text-[12px] tracking-widest uppercase text-white">WHAT'S NEXT?</h2>
+            <h2 className="font-['Montserrat'] font-black text-[12px] tracking-widest uppercase text-white">what's next?</h2>
           </div>
           <div className="divide-y divide-[#F5F5F5]">
             {WHATS_NEXT.map(({ icon: Icon, title, desc }) => (
@@ -76,10 +76,10 @@ export default function ThankYou() {
 
         <div className="flex flex-col sm:flex-row gap-3">
           <Link to="/" className="flex-1 bg-[#1A1C1C] text-white font-['Hanken_Grotesk'] font-bold text-[12px] tracking-widest uppercase py-4 text-center hover:bg-[#BD001A] transition-colors flex items-center justify-center gap-2">
-            <FiHome size={13} /> BACK TO HOME
+            <FiHome size={13} /> back to home
           </Link>
           <Link to="/menu" className="flex-1 bg-[#BD001A] text-white font-['Hanken_Grotesk'] font-bold text-[12px] tracking-widest uppercase py-4 text-center hover:bg-red-700 transition-colors flex items-center justify-center gap-2">
-            <FiShoppingBag size={13} /> ORDER AGAIN
+            <FiShoppingBag size={13} /> Order again
           </Link>
         </div>
       </div>

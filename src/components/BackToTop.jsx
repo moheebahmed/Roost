@@ -42,4 +42,4 @@ const BackToTop = () => {
     );
 };
 
-export default BackToTop;
+export default BackToTop; 

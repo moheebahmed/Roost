@@ -2,7 +2,7 @@ import VideoHero from './VideoHero'
 import broastVideo from '../assets/images/broast.mp4'
 
 function QualityHero() {
-  return (
+  return ( 
     <VideoHero
       src={broastVideo}
       badge="Uncompromising Standards"

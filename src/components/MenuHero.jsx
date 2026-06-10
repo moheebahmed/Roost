@@ -9,7 +9,7 @@ function MenuHero() {
                     {/* Left - Text */}
                     <div className="flex-1 flex flex-col justify-center py-12 md:py-16 pr-0 md:pr-12">
                         <h1 className="font-['Montserrat'] font-black text-[36px] md:text-[56px] leading-tight uppercase text-[#1A1C1C] mb-4">
-                            HIGH-VELOCITY <br />
+                            high-velocity <br />
                             <span className="text-[#BD001A]">FLAVOR.</span>
                         </h1>
                         <p className="font-['Hanken_Grotesk'] text-[15px] md:text-[17px] leading-[1.7] text-[#5D5F5F] max-w-[80%]">

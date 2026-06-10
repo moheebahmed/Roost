@@ -6,7 +6,7 @@ const STEPS = [
     { id: 2, icon: FiTruck, label: 'On The Way', desc: 'Your order is out for delivery' },
     { id: 3, icon: FiMapPin, label: 'Delivered', desc: 'Enjoy your meal!' },
 ]
-
+ 
 /**
  * Animated order tracking stepper
  * Props: currentStep (0-3)

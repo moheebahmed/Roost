@@ -9,7 +9,7 @@ function SectionHead({ label }) {
         </div>
     )
 }
-
+  
 function ToggleBtn({ value, current, onSelect, Icon, label }) {
     const active = current === value
     return (

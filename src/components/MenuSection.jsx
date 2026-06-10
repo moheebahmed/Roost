@@ -7,7 +7,7 @@ const tabConfig = {
     BURGERS: { title: 'the sandwiches', subtitle: 'HAND HELD HEAT', layout: 'grid3', key: 'burgers' },
     SIDES: { title: 'the sides', subtitle: 'ESSENTIAL PARTNERS', layout: 'grid4', key: 'sides' },
     DRINKS: { title: 'the drinks', subtitle: 'STAY REFRESHED', layout: 'grid4', key: 'drinks' },
-    DESSERTS: { title: 'the desserts', subtitle: 'SWEET FINISHES', layout: 'grid3', key: 'desserts' },
+    DESSERTS: { title: 'the desserts', subtitle: 'sweet finishes', layout: 'grid3', key: 'desserts' },
 }
 
 const tabs = ['BUCKETS', 'BURGERS', 'SIDES', 'DRINKS', 'DESSERTS']
@@ -84,7 +84,7 @@ function SmallCard({ item, category, onAdd }) {
                 onClick={() => onAdd({ ...item, category })}
                 className="w-full bg-[#1A1C1C] text-white font-['Hanken_Grotesk'] font-bold text-[11px] tracking-[1px] uppercase py-3 hover:bg-[#BD001A] transition-colors cursor-pointer"
             >
-                ADD TO ORDER
+                add to Order
             </button>
         </div>
     )
@@ -153,8 +153,8 @@ function MenuSection() {
                             key={tab}
                             onClick={() => setActiveTab(tab)}
                             className={`font-['Hanken_Grotesk'] font-bold text-[14px] leading-[14px] tracking-[0.7px] uppercase pb-3 shrink-0 transition-colors border-b-2 -mb-[2px] cursor-pointer ${activeTab === tab
-                                    ? 'text-[#BD001A] border-[#BD001A]'
-                                    : 'text-[#9A9C9C] border-transparent hover:text-[#1A1C1C]'
+                                ? 'text-[#BD001A] border-[#BD001A]'
+                                : 'text-[#9A9C9C] border-transparent hover:text-[#1A1C1C]'
                                 }`}
                         >
                             {tab}

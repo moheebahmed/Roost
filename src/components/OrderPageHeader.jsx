@@ -26,7 +26,6 @@ function OrderPageHeader({ icon: Icon, title, subtitle, backTo, backLabel, steps
                         )}
                     </div>
                 </div>
-
                 {/* Center: step indicator */}
                 {steps && (
                     <div className="hidden md:flex items-center gap-2 font-['Hanken_Grotesk'] text-[12px] font-bold tracking-widest uppercase">
